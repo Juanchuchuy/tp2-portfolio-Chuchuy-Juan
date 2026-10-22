@@ -1,0 +1,67 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100%;
+    gap: 1rem;
+    color: white;
+}
+
+.contact-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.3em;
+    font-size: 4em;
+}
+
+.contact-title svg {
+    flex-shrink: 0;
+}
+
+.contact-text {
+    opacity: 0.7;
+}
+
+.contact-email {
+    color: #9ee3f0;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.contact-email:hover {
+    text-decoration: underline;
+}
+
+.contact-social {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+}
+
+.contact-social a {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.contact-social a:hover {
+    opacity: 1;
+    transform: translateY(1px);
+}
+
+.contact-social i {
+    font-size: 1.2em;
+}
+
+@media (max-width: 600px) {
+    .contact-title {
+        font-size: 2.5em;
+    }
+}
