@@ -1,6 +1,6 @@
 # Portfolio con aside con React Router DOM — Juan Ignacio Chuchuy Linares
 
-Trabajo Práctico N°2 de la cátedra de Programación — UTN, Facultad Regional Tucumán.
+Trabajo Práctico N°2 Programacion 4 — UTN, Facultad Regional Tucumán.
 
 - **Alumno:** Juan Ignacio Chuchuy Linares
 - **Comisión:** 5
