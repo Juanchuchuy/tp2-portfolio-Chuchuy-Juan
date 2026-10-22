@@ -1,16 +1,29 @@
+# Portfolio con aside con React Router DOM — Juan Ignacio Chuchuy Linares
 
-# Portfolio React — Juan Ignacio Chuchuy Linares
+Trabajo Práctico N°2 de la cátedra de Programación — UTN, Facultad Regional Tucumán.
 
-Portfolio personal desarrollado con **React + Vite** como Trabajo Práctico N°1 de la cátedra en UTN - Facultad Regional Tucumán.
+- **Alumno:** Juan Ignacio Chuchuy Linares
+- **Comisión:** 5
 
 ## Descripción
 
-Sitio de una sola página (single page) con secciones de presentación, sobre mí, habilidades, proyectos y contacto, dividido en componentes reutilizables de React. Incluye un switch para cambiar el idioma del contenido entre inglés y español, y tarjetas de proyectos con descripción expandible al hacer click.
+Continuación del portfolio del TP1, convertido en una aplicación **multipágina** con React y React Router DOM. Tiene un menú lateral (aside, ~30 % del ancho) que permanece visible durante la navegación y un área de contenido (main, ~70 %) que cambia según la ruta. En pantallas chicas el menú pasa a la parte superior.
+
+| Página     | Ruta          |
+| ----------- | ------------- |
+| Inicio      | `/`         |
+| Sobre mí   | `/about`    |
+| Habilidades | `/skills`   |
+| Proyectos   | `/projects` |
+| Contacto    | `/contact`  |
+
+En la página de proyectos, al hacer click en el título de un proyecto se despliega su descripción.
 
 ## Tecnologías utilizadas
 
 - React 19
 - Vite
+- React Router DOM
 - JavaScript (JSX)
 - CSS3 (sin frameworks de estilos)
 - [lucide-react](https://lucide.dev/) — íconos
@@ -19,11 +32,9 @@ Sitio de una sola página (single page) con secciones de presentación, sobre m�
 
 ## Instalación
 
-Clonar el repositorio e instalar las dependencias:
-
 ```bash
-git clone https://github.com/Juanchuchuy/tp1-portfolio-Chuchuy-Juan.git
-cd tp1-portfolio-Chuchuy-Juan
+git clone https://github.com/Juanchuchuy/tp2-portfolio-Chuchuy-Juan.git
+cd tp2-portfolio-Chuchuy-Juan
 npm install
 ```
 
@@ -33,38 +44,32 @@ npm install
 npm run dev
 ```
 
-Esto levanta el servidor de desarrollo de Vite (por defecto en `http://localhost:5173`).
+Levanta el servidor de desarrollo de Vite (por defecto en `http://localhost:5173`).
 
-Otros scripts disponibles:
+## Estructura
 
-```bash
-npm run build    # genera la build de producción
-npm run preview  # sirve la build de producción localmente
 ```
-
-## Estructura de componentes
-
-
-
-App
-
-├── Header      (navegación + switch de idioma)
-
-├── HeroIntro   (presentación / hero)
-
-├── About       (sobre mí)
-
-├── Skills      (habilidades y tecnologías)
-
-├── Projects    (proyectos, con descripción expandible)
-
-└── Footer      (contacto, redes y secciones)
-
+src/
+├── components/
+│   ├── Sidebar.jsx       # menú lateral con NavLink
+│   ├── HeroIntro.jsx     # presentación de la página de inicio
+│   ├── SkillCard.jsx     # tarjeta de una categoría de habilidades
+│   └── ProjectCard.jsx   # tarjeta de un proyecto
+├── pages/
+│   ├── Home.jsx
+│   ├── About.jsx
+│   ├── Skills.jsx
+│   ├── Projects.jsx
+│   └── Contact.jsx
+├── App.jsx             
+├── main.jsx            
+└── index.css
+```
 
 ## Repositorio
 
-[https://github.com/Juanchuchuy/tp1-portfolio-Chuchuy-Juan](https://github.com/Juanchuchuy/tp1-portfolio-Chuchuy-Juan)
+[https://github.com/Juanchuchuy/tp2-portfolio-Chuchuy-Juan](https://github.com/Juanchuchuy/tp2-portfolio-Chuchuy-Juan)
 
 ## Autor
 
-Juan Ignacio Chuchuy Linares — [github.com/Chuchuy-code](https://github.com/Chuchuy-code)
+Juan Ignacio Chuchuy Linares — [github.com/Juanchuchuy](https://github.com/Juanchuchuy)
